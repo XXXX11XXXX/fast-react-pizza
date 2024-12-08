@@ -1,11 +1,17 @@
+import CreateOrder from "../order/CreateOrder";
+import CreateUser from "../user/CreateUser";
 function Home() {
   return (
-    <div>
-      <h1>
+    <div className="px-4 py-8 text-center bg-stone-100">
+      <h1 className="text-xl text-stone-700 font-semibold text-center mb-8
+      md:text-3xl">
         The best pizza.
         <br />
-        Straight out of the oven, straight to you.
+        <span className="text-yellow-500">
+          Straight out of the oven, straight to you.
+        </span>
       </h1>
+      <CreateUser />
     </div>
   );
 }
